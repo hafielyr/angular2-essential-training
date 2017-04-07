@@ -1,0 +1,10 @@
+
+<div class="popUp" *ngIf='mediaItem'>
+<a class="close" (click)="onClose()">
+    &#10006;
+  </a>
+<h2>{{ mediaItem.name }}</h2>
+<div>Watched on {{ mediaItem.watchedOn }}</div>
+<div>{{ mediaItem.category }}</div>
+<div>{{ mediaItem.year }}</div>
+</div>

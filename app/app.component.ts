@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['app/app.component.css']
 })
 export class AppComponent {
+  trg=null;
+  deleteItem(mediaItem){
+
+  }
+  popItem(Item){
+  this.trg=Item;
+  }
+  hidePop(Item){
+  this.trg=Item;
+  }
   firstMediaItem = {
     id: 1,
     name: "Firebug",

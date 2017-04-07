@@ -1,0 +1,15 @@
+.popUp{
+  background-color: #37ad79;
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  left: 300px;
+  padding: 10px;
+}
+.close{
+  position: relative;
+  float: right;
+  background-color: #37ad79;
+  cursor: pointer;
+  padding: 1px;
+}
