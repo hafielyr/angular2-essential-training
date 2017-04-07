@@ -1,0 +1,21 @@
+<div class="popup" *ngIf="mediaItem">
+  <div class="closepop" (click)="closepop()">&#10006;</div>
+  
+  <img 
+  *ngFor="let mediaImage of mediaImages"
+  [mwImage]="mediaImage.visibility" 
+  class="image"
+  src={{mediaImage.path}}>
+  <a class="prev" (click)="onprev()">
+    previous
+  </a>
+  <a class="next" (click)="onnext()">
+    next
+  </a>
+  <div class="mediaitem">
+  <h2>{{ mediaItem.name }}</h2>
+  <div>Watched on {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
+<div>{{ mediaItem.category }}</div>
+<div>{{ mediaItem.year }}</div>
+  </div>
+</div>

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'mw-app',
   templateUrl: 'app/app.component.html',
   styleUrls: ['app/app.component.css']
 })
-export class AppComponent { }
+export class AppComponent { 
+  @Input() mediaItem;
+}

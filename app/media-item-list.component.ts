@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'mw-media-item-list',
@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['app/media-item-list.component.css']
 })
 export class MediaItemListComponent {
-
+  @Input() mediaItem;
   onMediaItemDelete(mediaItem) { }
-
+  getItem(media){
+    this.mediaItem=media;
+    console.log(this.mediaItem);
+  }
+  getClosePop(media){
+    this.mediaItem=media;
+  }
   mediaItems = [
     {
       id: 1,
