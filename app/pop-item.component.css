@@ -15,14 +15,22 @@
   padding-top: 30px;
   padding-left: 110px;
   display: none;
+  width:50px;
+  height: 50px;
+  position: absolute;
 }
 .image.is-show{
   display: block;
 }
+.image.is-show.is-show-hovering{
+  display: block;
+  width:70px;
+  height: 70px;
+}
 .next , .prev{
   cursor: pointer;
   position: relative;
-  top: 70px;
+  top: 100px;
   background-color: #ec4342;
   padding: 4px;
   font-size: 1em;
@@ -40,7 +48,7 @@
 .mediaitem{
   position: relative;
   float:left;
-  top:90px;
+  top:130px;
   left: 0px;
   width: 200px;
 }
