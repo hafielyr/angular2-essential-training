@@ -1,0 +1,8 @@
+.player{
+  position: float;
+  width: 200px;
+  font-size: 30px;
+}
+.detail{
+  cursor: pointer;
+}

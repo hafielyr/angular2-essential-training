@@ -1,0 +1,16 @@
+<div class="tablebody">
+  <table>
+    <app-player
+      *ngFor="let player of Players"
+      [player]="player"
+      (detailPlayer)="getDetailPlayer($event)"
+    >
+    <tbody>
+      <tr>
+        
+    </tr>
+</tbody>
+    </app-player>
+
+  </table>
+</div>

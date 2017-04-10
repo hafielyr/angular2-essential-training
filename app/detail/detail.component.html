@@ -1,0 +1,16 @@
+<div class="detail"  >
+  <div class="detailtext" *ngIf="playerDetail">
+        <td>      
+        <tr>
+          <img src={{playerDetail.photo}} />
+        </tr>
+        <tr>Player ID : {{ playerDetail.id}}</tr>
+        <tr>Player Nick Name : {{ playerDetail.nick}}</tr>
+        <tr>Player Name : {{playerDetail.name}}</tr>
+        <tr>player team : {{playerDetail.team | uppercase}}</tr>
+        <tr>player role : {{playerDetail.role}}</tr>
+        <tr>player age : {{playerDetail.age}}</tr>      
+        </td>
+    <img [selectWin]="playerDetail.winTI" class="TI" src="../media/TI.png">
+  <div>
+</div>

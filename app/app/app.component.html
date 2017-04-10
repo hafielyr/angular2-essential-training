@@ -1,0 +1,22 @@
+<nav>
+  <a>
+    <img (click)="method1()" class="icon" />
+  </a>
+  <a>
+    <img src="media/04.png" class="icon" />
+  </a>
+ 
+</nav>
+<section>
+  <header>
+    <h1>Dota2 Professional Player</h1>
+  </header>
+  <app-table
+  (playerInfo)="getDetailPlayer($event)"
+  ></app-table>
+  <app-detail
+  [playerDetail]="playerInfo"
+  ></app-detail>
+  <app-form>
+  </app-form>
+</section>
