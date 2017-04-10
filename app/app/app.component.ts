@@ -8,7 +8,4 @@ import{ Component,Input } from '@angular/core';
 
 export class AppComponent{
   @Input() playerInfo;
-  getDetailPlayer(player){
-    this.playerInfo=player;
-  }
 }

@@ -11,11 +11,10 @@ export class AppTableComponent{
   @Input() player;
   Players;
   role='';
-  @Output() playerInfo=new EventEmitter();
 
   constructor(private playerService:PlayerService){}
   ngOnInit(){
-    this.getPlayer(this.role);
+      this.getPlayer(this.role);
 
   }
 
@@ -25,10 +24,6 @@ export class AppTableComponent{
         this.Players=player;
     });
 
-  }
-  getDetailPlayer(player){
-    this.player=player;
-    this.playerInfo.emit(this.player);
   }
   
 }

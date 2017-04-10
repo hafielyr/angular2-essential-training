@@ -11,12 +11,14 @@ import { WinDirective } from "./detail/win.directive";
 import { lookupListToken, lookupLists } from "./provider";
 import { AppFormComponent } from "./Form/form.component";
 import { MockXHRBackend} from './mock-xhr-backend';
+import {routing} from './app.routing';
 
 @NgModule({
   imports:[
     BrowserModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   declarations: [
     AppComponent,
