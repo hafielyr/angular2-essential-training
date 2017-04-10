@@ -5,7 +5,7 @@
           <img src={{playerDetail.photo}} />
         </tr>
         <tr>Player ID : {{ playerDetail.id}}</tr>
-        <tr>Player Nick Name : {{ playerDetail.nick}}</tr>
+        <tr>Player Nick Name : {{ playerDetail.nick | dash }}</tr>
         <tr>Player Name : {{playerDetail.name}}</tr>
         <tr>player team : {{playerDetail.team | uppercase}}</tr>
         <tr>player role : {{playerDetail.role}}</tr>

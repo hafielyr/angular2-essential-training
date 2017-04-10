@@ -1,9 +1,14 @@
 .detail{
+  padding-left: 20px;
+  padding-top: 20px;
   background: lightslategrey;
   height: 100%;
-  width: 300px;
+  width: 280px;
   position: fixed;
   top:0px;
+}
+tr{
+  padding-top:10px;
 }
 .TI{
   display: none;

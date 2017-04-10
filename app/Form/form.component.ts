@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
+import {Router} from '@angular/router';
 
 import { PlayerService } from '../player/player.service';
 import { lookupListToken} from '../provider';
@@ -15,7 +16,8 @@ export class AppFormComponent {
   constructor(
     private formBuilder: FormBuilder,
     private playerService: PlayerService,
-    @Inject(lookupListToken) public lookupLists) {}
+    @Inject(lookupListToken) public lookupLists,
+    private router:Router){}
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -53,7 +55,9 @@ export class AppFormComponent {
   }
 
   onSubmit(player) {
-    this.playerService.add(player).subscribe();
+    this.playerService.add(player).subscribe(()=>{
+      this.router.navigate(['/all']);
+    });
     this.index+=1;
   }
 }

@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppFormComponent } from './form/form.component';
+import { AppFormComponent } from './Form/form.component';
 import { AppTableComponent } from './table/table.component';
 
 const appRoutes: Routes = [

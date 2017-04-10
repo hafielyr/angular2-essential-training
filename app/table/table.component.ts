@@ -25,5 +25,8 @@ export class AppTableComponent{
     });
 
   }
+  getDetailPlayer(player){
+    this.player=player;
+  }
   
 }

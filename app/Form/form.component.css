@@ -1,9 +1,12 @@
 :host {
   display: block;
   padding: 10px;
-  right: 0px;
+  right: 600px;
+  top: 150px;
   position: fixed;
-  top:0px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  border-color:white;
 }
 ul {
   list-style-type: none;

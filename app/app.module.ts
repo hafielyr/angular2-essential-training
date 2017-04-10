@@ -11,7 +11,8 @@ import { WinDirective } from "./detail/win.directive";
 import { lookupListToken, lookupLists } from "./provider";
 import { AppFormComponent } from "./Form/form.component";
 import { MockXHRBackend} from './mock-xhr-backend';
-import {routing} from './app.routing';
+import { routing } from './app.routing';
+import { DashPipe } from "./dash-pipe";
 
 @NgModule({
   imports:[
@@ -26,7 +27,8 @@ import {routing} from './app.routing';
     AppDetailComponent,
     AppPlayerComponent,
     WinDirective,
-    AppFormComponent
+    AppFormComponent,
+    DashPipe
   ],
   providers:[
     PlayerService,
