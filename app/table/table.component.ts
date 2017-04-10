@@ -10,16 +10,22 @@ import{PlayerService} from '../player/player.service';
 export class AppTableComponent{
   @Input() player;
   Players;
+  role='';
   @Output() playerInfo=new EventEmitter();
 
   constructor(private playerService:PlayerService){}
   ngOnInit(){
-    this.Players= this.playerService.get().subscribe(Players=>{
-      this.Players=Players;
-    });
+    this.getPlayer(this.role);
 
   }
 
+  getPlayer(role){
+    this.role=role;
+    this.playerService.get(role).subscribe(player=>{
+        this.Players=player;
+    });
+
+  }
   getDetailPlayer(player){
     this.player=player;
     this.playerInfo.emit(this.player);

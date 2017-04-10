@@ -8,8 +8,10 @@ export class PlayerService{
 constructor(private http:Http){}
 
 playerInfo;
-get(){
-  return this.http.get('players').map(response=>{
+get(role){
+  let searchParams=new URLSearchParams();
+  searchParams.append('role',role);
+  return this.http.get('players',{search: searchParams}).map(response=>{
     return response.json().players;
   });
 }
